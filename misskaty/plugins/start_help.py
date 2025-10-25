@@ -224,7 +224,7 @@ You can choose an option below, by clicking a button.
 
 Send command /privacy if you want know data collected by this bot.
 
-If you want give coffee to my owner you can send /donate command for more info.
+If you want give coffee to my owner you can send command for more info.
 """.format(
             first_name=name,
             bot_name="MissKaty",
