@@ -230,8 +230,8 @@ async def donate(self: Client, ctx: Message):
     try:
         await self.send_photo(
             ctx.chat.id,
-            "https://img.yasirweb.eu.org/file/ee74ce527fb8264b54691.jpg",
-            caption="Hi, If you find this bot useful, you can make a donation to the account below. Because this bot server uses VPS and is not free. Thank You..\n\n<b>Indonesian Payment:</b>\n<b>QRIS:</b> https://img.yasirweb.eu.org/file/ee74ce527fb8264b54691.jpg (Yasir Store)\n<b>Bank Jago:</b> 109641845083 (Yasir Aris M)\n\nFor international people can use PayPal to support me or via GitHub Sponsor:\nhttps://paypal.me/yasirarism\nhttps://github.com/sponsors/yasirarism\n\n<b>Source:</b> @BeriKopi",
+            "https://graph.org/file/6f1d677dc86adb8ecb282-ab10607641150975d2.jpg",
+            caption="Hi, If you find this bot useful, you can make a donation to the account below. Because this bot server uses VPS and is not free. Thank You..\n\n<b>Indonesian Payment:</b>\n<b>QRIS:</b> https://graph.org/file/6f1d677dc86adb8ecb282-ab10607641150975d2.jpg (Toko Paii)\n\nFor international people can use PayPal to support me or via Store Sponsor:\n@Jasebxall\n@iXallsupport\n\n<b>Source:</b> @gubezrnur",
             reply_to_message_id=ctx.id,
             message_effect_id=5159385139981059251
             if ctx.chat.type.value == "private"
@@ -713,3 +713,4 @@ if AUTO_RESTART:
     scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
     scheduler.add_job(auto_restart, trigger="interval", days=3)
     scheduler.start()
+
