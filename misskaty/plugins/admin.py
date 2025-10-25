@@ -867,7 +867,7 @@ async def set_chat_photo(_, ctx: Message):
     os.remove(photo)
 
 
-@app.on_message(filters.group & filters.command("mentionall", COMMAND_HANDLER))
+@app.on_message(filters.group & filters.command("all", COMMAND_HANDLER))
 async def mentionall(app: Client, msg: Message):
     user = await msg.chat.get_member(msg.from_user.id)
     if user.status in (
